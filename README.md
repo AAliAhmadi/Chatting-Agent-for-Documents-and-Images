@@ -121,9 +121,9 @@ Describe the main object in the image.
 
 - 3. The model answers based on:
 
--- The document or image you uploaded, and
+  - The document or image you uploaded, and
 
--- The previous chat history (multi-turn memory).
+  - The previous chat history (multi-turn memory).
 
 - 4. You can ask follow-up questions — no need to re-upload the same file.
 
@@ -131,8 +131,8 @@ Describe the main object in the image.
 
 ## 🎨 Optional Streamlit Customization
 
-You can add a .streamlit/config.toml file for dark mode or theming:
-
+You can add a ```.streamlit/config.toml``` file for dark mode or theming:
+```bash
 [theme]
 base="dark"
 primaryColor="#00ADB5"
@@ -140,53 +140,35 @@ backgroundColor="#222831"
 secondaryBackgroundColor="#393E46"
 textColor="#EEEEEE"
 font="sans serif"
+```
 
-🧩 Requirements
+## 🧩 Requirements
 
-requirements.txt includes:
+```requirements.txt``` includes:
 
+```bash
 streamlit
 langchain
 langchain-openai
 langchain-community
 PyPDF2
 python-docx
+```
 
-🧠 How It Works
+## 🧠 How It Works
 
-Files and chat messages are stored in st.session_state so they persist across turns.
+1. Files and chat messages are stored in ```st.session_state``` so they persist across turns.
 
-Uploaded documents are read (via PyPDF2, docx, or plain text).
+2. Uploaded documents are read (via ```PyPDF2```, ```docx```, or plain text).
 
-The LLM (Gemma or GPT) gets:
+3. The LLM (Gemma or GPT) gets:
 
-Chat history
+- Chat history
 
-Document or image context
+- Document or image context
 
-The user’s new question
+- The user’s new question
 
-The response is displayed and stored for context in the next turn.
-
-☁️ Push to GitHub
-
-Once everything works, you can upload your code to your GitHub account.
-
-1️⃣ Initialize git (if not already)
-git init
-
-2️⃣ Add your remote repo
-git remote add origin https://github.com/YOUR_USERNAME/smart-chat-app.git
-
-3️⃣ Add and commit files
-git add .
-git commit -m "Initial commit: smart chat app with memory"
-
-4️⃣ Push to GitHub
-git branch -M main
-git push -u origin main
+4. The response is displayed and stored for context in the next turn.
 
 
-✅ Done! Your repository will now be visible on GitHub at:
-
-https://github.com/YOUR_USERNAME/smart-chat-app
