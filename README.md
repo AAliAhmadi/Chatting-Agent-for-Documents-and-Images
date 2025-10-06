@@ -51,7 +51,7 @@ It remembers your chat history and uploaded documents, so you can ask multiple f
 ## ⚙️ Installation
 1️⃣ Clone this repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/smart-chat-app.git
+git clone https://github.com/AAliAhmadi/smart-chat-app.git
 cd smart-chat-app
 ```
 
