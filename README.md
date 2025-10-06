@@ -142,6 +142,8 @@ textColor="#EEEEEE"
 font="sans serif"
 ```
 
+## 🙏 Acknowledgement
+This project was inspired by the lectures of **Bharath Thippireddy**.
 ## 🧩 Requirements
 
 ```requirements.txt``` includes:
