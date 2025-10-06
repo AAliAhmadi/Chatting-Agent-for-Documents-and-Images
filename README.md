@@ -51,8 +51,8 @@ It remembers your chat history and uploaded documents, so you can ask multiple f
 ## ⚙️ Installation
 1️⃣ Clone this repository
 ```bash
-git clone https://github.com/AAliAhmadi/smart-chat-app.git
-cd smart-chat-app
+git clone https://github.com/AAliAhmadi/Chatting-Agent-for-Documents-and-Images.git
+cd Chatting-Agent-for-Documents-and-Images
 ```
 
 2️⃣ Create a virtual environment (optional but recommended)
